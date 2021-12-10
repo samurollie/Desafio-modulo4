@@ -42,7 +42,12 @@
           <td>{{ f.tel }}</td>
           <td>{{ f.email }}</td>
           <td>
-            <button class="btn btn-success">Edit</button>
+            <button
+              class="btn btn-success"
+              [routerLink]="['/funcionarios', 'edit', f.id]"
+            >
+              Edit
+            </button>
             <button class="btn btn-danger" (click)="del(f, i)">Delete</button>
           </td>
         </tr>

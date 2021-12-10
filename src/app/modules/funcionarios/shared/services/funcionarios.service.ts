@@ -18,6 +18,11 @@ export class FuncionariosService {
     return this.http.get<Funcionario[]>(this.funcionariosUrl, this.httpOptions);
   }
 
+  get(id: any): Observable<Funcionario> {
+    const url = `${this.funcionariosUrl}/${id}`;
+    return this.http.get<Funcionario>(url);
+  }
+
   create(funcionario: Funcionario): Observable<Funcionario> {
     return this.http.post<Funcionario>(
       this.funcionariosUrl,
@@ -27,8 +32,13 @@ export class FuncionariosService {
   }
 
   delete(funcionario: Funcionario | number): Observable<Funcionario> {
-    const id = typeof funcionario == 'number' ? funcionario : funcionario.id
-    const url = `${this.funcionariosUrl}/${id}`
-    return this.http.delete<Funcionario>(url, this.httpOptions)
+    const id = typeof funcionario == 'number' ? funcionario : funcionario.id;
+    const url = `${this.funcionariosUrl}/${id}`;
+    return this.http.delete<Funcionario>(url, this.httpOptions);
+  }
+
+  update(funcionario: Funcionario): Observable<Funcionario> {
+    const url = `${this.funcionariosUrl}/${funcionario.id}`;
+    return this.http.put<Funcionario>(url, funcionario, this.httpOptions);
   }
 }

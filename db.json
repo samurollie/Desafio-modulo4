@@ -1,10 +1,16 @@
 {
   "funcionarios": [
     {
-      "name": "Samuel",
-      "email": "samuelbarbosa2001@gmail.com",
+      "name": "cudfdsfsdf",
+      "email": "s@c.com",
       "tel": "1223455656454",
       "id": 1
+    },
+    {
+      "name": "Samuel",
+      "email": "samuelbarbosa2001@gmail.com",
+      "tel": "777777777777",
+      "id": 2
     }
   ]
 }
