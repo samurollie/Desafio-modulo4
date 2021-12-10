@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FuncionariosRoutingModule } from './funcionarios-routing.module';
 import { IndexComponent } from './components/index/index.component';
 import { CreateComponent } from './components/create/create.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { CreateComponent } from './components/create/create.component';
   ],
   imports: [
     CommonModule,
-    FuncionariosRoutingModule
+    FuncionariosRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class FuncionariosModule { }

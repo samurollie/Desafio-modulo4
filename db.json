@@ -4,19 +4,25 @@
       "name": "samuel",
       "email": "email@email.com",
       "tel": "999999999",
-      "id": "1"
+      "id": 1
     },
     {
       "name": "lucas",
       "email": "email@email.com",
       "tel": "999999999",
-      "id": "2"
+      "id": 2
     },
     {
       "name": "Antonio",
       "email": "email@email.com",
       "tel": "999999999",
-      "id": "3"
+      "id": 3
+    },
+    {
+      "name": "Samuel",
+      "email": "samuelbarbosa2001@gmail.com",
+      "tel": "11111111111",
+      "id": 4
     }
   ]
 }
