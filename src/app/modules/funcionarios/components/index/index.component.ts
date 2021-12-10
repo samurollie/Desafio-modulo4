@@ -15,4 +15,11 @@ export class IndexComponent implements OnInit {
   ngOnInit(): void {
     this.funcionariosService.getAll().subscribe((f) => (this.funcionarios = f));
   }
+
+  del(f: Funcionario, idx:number) {
+    if(confirm("Tem certeza que deseja excluir esse funcionário?")) {
+      this.funcionariosService.delete(f).subscribe( _ => this.funcionarios.splice(idx, 1));
+
+    }
+  }
 }
