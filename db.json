@@ -1,0 +1,16 @@
+{
+  "funcionarios": [
+    {
+      "name": "samuel",
+      "email": "slvlb@ic.ufal.br",
+      "tel": "(86) 98808-6040",
+      "id": "1"
+    },
+    {
+      "name": "lucas",
+      "email": "slvlb@ic.ufal.br",
+      "tel": "(86) 98808-6040",
+      "id": "2"
+    }
+  ]
+}
